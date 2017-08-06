@@ -130,7 +130,7 @@ func (s *StreamReaderSuite) TestReturnsErrorIfThereIsNoNextEventToReturn(c *C) {
 	_ = stream.Next()
 
 	_ = stream.Next()
-	c.Assert(stream.Err(), DeepEquals, want)
+	c.Assert(stream.Err().Error(), DeepEquals, want.Error())
 	c.Assert(stream.EventResponse(), IsNil)
 }
 
