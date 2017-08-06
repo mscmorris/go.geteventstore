@@ -14,8 +14,8 @@ import (
 	"reflect"
 	"time"
 
+	"github.com/jetbasrawi/go.geteventstore"
 	"github.com/jetbasrawi/go.geteventstore.testfeed"
-	"github.com/mscmorris/go.geteventstore"
 	. "gopkg.in/check.v1"
 )
 
