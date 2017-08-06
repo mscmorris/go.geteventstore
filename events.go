@@ -44,6 +44,7 @@ type EventAtomResponse struct {
 	ID      string      `json:"id"`
 	Updated TimeStr     `json:"updated"`
 	Summary string      `json:"summary"`
+	Links   []Link      `json:"links,omitempty"`
 	Content interface{} `json:"content"`
 }
 
@@ -72,7 +73,6 @@ type Event struct {
 	EventType     string      `json:"eventType,omitempty"`
 	EventID       string      `json:"eventId,omitempty"`
 	Data          interface{} `json:"data"`
-	Links         []Link      `json:"links,omitempty"`
 	MetaData      interface{} `json:"metadata,omitempty"`
 }
 
